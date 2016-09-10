@@ -1,0 +1,26 @@
+body {
+  background: white;
+}
+
+.comment .comment-text{
+  font-size: 15px;
+  color: #333;
+}
+
+.comment .author{
+  font-size: 13px;
+  color: #333;
+  font-weight: bold;
+}
+.comment .author span {
+  color: grey;
+  font-weight: lighter;
+}
+
+.comment{
+  margin-bottom: 5px;
+}
+
+.main-header{
+  text-align: center;
+}
