@@ -1,24 +1,27 @@
 import React from "react";
-import CommentBox from './CommentBox';
+import Header from './Header';
+import Footer from './Footer';
+import Main from './Main';
 
 class Layout extends React.Component {
   constructor() {
     super();
     this.state = {
-      title: "Sample React App"
+      title: "Sample React App",
+      companyName: 'Ideas2it'
     }
   }
 
-  render() {
+  render() { 
+
+    console.log('..............hey ddd', );
     return (
       <div className="main-container">
-        <h1 className='main-header'>Comment Box {this.state.title}</h1>
-        <div className="comment-box-container">
-          <CommentBox/>
-          <CommentBox/>
-        </div>
+        <Header title={this.state.title}></Header>
+          {this.props.children}
+        <Footer info={this.state.companyName}></Footer>
       </div>
-    );
+      );
   }
 }
 
